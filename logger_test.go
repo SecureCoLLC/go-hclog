@@ -116,7 +116,7 @@ func TestLogger(t *testing.T) {
 		lines := strings.Split(buf.String(), "\n")
 		require.True(t, len(lines) > 1)
 
-		assert.Equal(t, "github.com/hashicorp/go-hclog.Stacktrace", lines[1])
+		assert.Equal(t, "github.com/securecollc/go-hclog.Stacktrace", lines[1])
 	})
 
 	t.Run("outputs stack traces with it's given a name", func(t *testing.T) {
@@ -132,7 +132,7 @@ func TestLogger(t *testing.T) {
 		lines := strings.Split(buf.String(), "\n")
 		require.True(t, len(lines) > 1)
 
-		assert.Equal(t, "github.com/hashicorp/go-hclog.Stacktrace", lines[1])
+		assert.Equal(t, "github.com/securecollc/go-hclog.Stacktrace", lines[1])
 	})
 
 	t.Run("includes the caller location", func(t *testing.T) {

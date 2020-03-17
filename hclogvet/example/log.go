@@ -3,7 +3,7 @@ package testdata
 import (
 	"io"
 
-	hclog "github.com/hashicorp/go-hclog"
+	hclog "github.com/securecollc/go-hclog"
 )
 
 func badHCLog() {

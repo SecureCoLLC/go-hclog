@@ -169,7 +169,7 @@ func trimCallerPath(path string) string {
 	return path[idx+1:]
 }
 
-var logImplFile = regexp.MustCompile(`github.com/hashicorp/go-hclog/.+logger.go$`)
+var logImplFile = regexp.MustCompile(`github.com/securecollc/go-hclog/.+logger.go$`)
 
 // Non-JSON logging format function
 func (l *intLogger) logPlain(t time.Time, name string, level Level, msg string, args ...interface{}) {
